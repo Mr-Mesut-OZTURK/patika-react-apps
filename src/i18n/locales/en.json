@@ -5,7 +5,8 @@
     "rickmorty": "Rick & Morty",
     "bmi": "BMI Calculator",
     "shop": "Fashion Store",
-    "notes": "Notes"
+    "notes": "Notes",
+    "chat": "Live Chat"
   },
   "home": {
     "title": "Patika React Apps",
@@ -15,7 +16,8 @@
     "rickmorty_desc": "List all Rick and Morty characters using the GraphQL API, search by name and filter by status, gender, species and location.",
     "bmi_desc": "Enter your height and weight to calculate your Body Mass Index and receive personalised diet recommendations.",
     "shop_desc": "Explore our clothing collection. Add to cart, save favourites and follow the season's latest trends.",
-    "notes_desc": "A Notion-style notes app. Create, edit, delete and pin notes — everything is saved in your browser automatically."
+    "notes_desc": "A Notion-style notes app. Create, edit, delete and pin notes — everything is saved in your browser automatically.",
+    "chat_desc": "Real-time chat application. Multiple users can message each other simultaneously. Instant multi-user communication via Socket.io."
   },
   "weather": {
     "title": "🌤 Weather",
@@ -201,5 +203,25 @@
     "last_saved": "Saved",
     "note_not_found": "Note not found.",
     "back": "Go back"
+  },
+  "chat": {
+    "app_title": "💬 Live Chat",
+    "join_title": "Join the Chat",
+    "join_subtitle": "Pick a username and start chatting!",
+    "username_placeholder": "Your username...",
+    "join_btn": "Join",
+    "online": "online",
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "typing_one": "{{user}} is typing...",
+    "typing_two": "{{user1}} and {{user2}} are typing...",
+    "typing_many": "Several people are typing...",
+    "msg_placeholder": "Type a message... (Enter = send, Shift+Enter = new line)",
+    "send": "Send",
+    "user_joined": "{{username}} joined the chat",
+    "user_left": "{{username}} left the chat",
+    "users_title": "Online",
+    "you": "(you)",
+    "not_connected": "Cannot connect to server. To start it:"
   }
 }

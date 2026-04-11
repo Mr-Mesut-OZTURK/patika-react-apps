@@ -5,7 +5,8 @@
     "rickmorty": "Rick & Morty",
     "bmi": "BMI-Rechner",
     "shop": "Modeshop",
-    "notes": "Notizen"
+    "notes": "Notizen",
+    "chat": "Live-Chat"
   },
   "home": {
     "title": "Patika React Apps",
@@ -15,7 +16,8 @@
     "rickmorty_desc": "Liste alle Rick-and-Morty-Charaktere mit der GraphQL-API, suche nach Name und filtere nach Status, Geschlecht, Spezies und Standort.",
     "bmi_desc": "Gib Größe und Gewicht ein, um deinen Body-Mass-Index zu berechnen und persönliche Diät-Empfehlungen zu erhalten.",
     "shop_desc": "Entdecke unsere Kleidungskollektion. Füge Artikel zum Warenkorb hinzu, speichere Favoriten und verfolge die neuesten Trends.",
-    "notes_desc": "Eine Notion-ähnliche Notiz-App. Erstelle, bearbeite, lösche und hefte Notizen an — alles wird automatisch im Browser gespeichert."
+    "notes_desc": "Eine Notion-ähnliche Notiz-App. Erstelle, bearbeite, lösche und hefte Notizen an — alles wird automatisch im Browser gespeichert.",
+    "chat_desc": "Echtzeit-Chat-Anwendung. Mehrere Benutzer können gleichzeitig miteinander chatten. Sofortige Mehrbenutzer-Kommunikation über Socket.io."
   },
   "weather": {
     "title": "🌤 Wetter",
@@ -201,5 +203,25 @@
     "last_saved": "Gespeichert",
     "note_not_found": "Notiz nicht gefunden.",
     "back": "Zurück"
+  },
+  "chat": {
+    "app_title": "💬 Live-Chat",
+    "join_title": "Chat beitreten",
+    "join_subtitle": "Wähle einen Benutzernamen und beginne zu chatten!",
+    "username_placeholder": "Dein Benutzername...",
+    "join_btn": "Beitreten",
+    "online": "online",
+    "connected": "Verbunden",
+    "disconnected": "Getrennt",
+    "typing_one": "{{user}} tippt...",
+    "typing_two": "{{user1}} und {{user2}} tippen...",
+    "typing_many": "Mehrere Personen tippen...",
+    "msg_placeholder": "Nachricht schreiben... (Enter = senden, Shift+Enter = neue Zeile)",
+    "send": "Senden",
+    "user_joined": "{{username}} ist dem Chat beigetreten",
+    "user_left": "{{username}} hat den Chat verlassen",
+    "users_title": "Online",
+    "you": "(du)",
+    "not_connected": "Keine Verbindung zum Server. Server starten:"
   }
 }

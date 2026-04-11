@@ -5,7 +5,8 @@
     "rickmorty": "Rick & Morty",
     "bmi": "BMI Hesapla",
     "shop": "Moda Mağazası",
-    "notes": "Notlar"
+    "notes": "Notlar",
+    "chat": "Canlı Sohbet"
   },
   "home": {
     "title": "Patika React Apps",
@@ -15,7 +16,8 @@
     "rickmorty_desc": "GraphQL API ile tüm Rick and Morty karakterlerini listele, ada göre ara, status / cinsiyet / tür / lokasyon bazlı filtrele.",
     "bmi_desc": "Boy ve kilonuzu girerek Vücut Kitle Endeksinizi hesaplayın. Sonuca göre kişisel diyet önerileri alın.",
     "shop_desc": "Kıyafet koleksiyonumuzu keşfet. Sepete ekle, favorilere al, sezon trendlerini takip et.",
-    "notes_desc": "Notion tarzı not uygulaması. Not oluştur, düzenle, sil, sabitle ve tarayıcı kapatılsa bile notların korunmaya devam etsin."
+    "notes_desc": "Notion tarzı not uygulaması. Not oluştur, düzenle, sil, sabitle ve tarayıcı kapatılsa bile notların korunmaya devam etsin.",
+    "chat_desc": "Gerçek zamanlı sohbet uygulaması. Birden fazla kullanıcı aynı anda mesajlaşabilir. Socket.io ile anlık çok kullanıcılı iletişim."
   },
   "weather": {
     "title": "🌤 Hava Durumu",
@@ -201,5 +203,25 @@
     "last_saved": "Son kayıt",
     "note_not_found": "Not bulunamadı.",
     "back": "Geri Dön"
+  },
+  "chat": {
+    "app_title": "💬 Canlı Sohbet",
+    "join_title": "Sohbete Katıl",
+    "join_subtitle": "Bir kullanıcı adı seç ve herkesle sohbet et!",
+    "username_placeholder": "Kullanıcı adın...",
+    "join_btn": "Katıl",
+    "online": "kişi çevrimiçi",
+    "connected": "Bağlandı",
+    "disconnected": "Bağlantı kesildi",
+    "typing_one": "{{user}} yazıyor...",
+    "typing_two": "{{user1}} ve {{user2}} yazıyor...",
+    "typing_many": "Birkaç kişi yazıyor...",
+    "msg_placeholder": "Mesaj yaz... (Enter = gönder, Shift+Enter = yeni satır)",
+    "send": "Gönder",
+    "user_joined": "{{username}} sohbete katıldı",
+    "user_left": "{{username}} ayrıldı",
+    "users_title": "Çevrimiçi",
+    "you": "(sen)",
+    "not_connected": "Sunucuya bağlanılamıyor. Sunucuyu başlatmak için:"
   }
 }

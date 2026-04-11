@@ -8,6 +8,7 @@ import RickAndMortyApp from "./apps/rickandmorty/RickAndMortyApp";
 import BMIApp from "./apps/bmi/BMIApp";
 import EcommerceApp from "./apps/ecommerce/EcommerceApp";
 import NotesApp from "./apps/notes/NotesApp";
+import ChatApp from "./apps/chat/ChatApp";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const App: React.FC = () => {
@@ -47,6 +48,9 @@ const App: React.FC = () => {
           <NavLink to="/notes" onClick={close}>
             📒 {t("nav.notes")}
           </NavLink>
+          <NavLink to="/chat" onClick={close}>
+            💬 {t("nav.chat")}
+          </NavLink>
         </div>
         <LanguageSwitcher />
       </nav>
@@ -58,6 +62,7 @@ const App: React.FC = () => {
           <Route path="/bmi/*" element={<BMIApp />} />
           <Route path="/shop/*" element={<EcommerceApp />} />
           <Route path="/notes/*" element={<NotesApp />} />
+          <Route path="/chat/*" element={<ChatApp />} />
         </Routes>
       </div>
     </BrowserRouter>

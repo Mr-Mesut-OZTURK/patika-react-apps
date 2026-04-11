@@ -53,6 +53,14 @@ const apps: AppCard[] = [
     path: "/notes",
     gradient: "linear-gradient(135deg, #636e72 0%, #2d3436 100%)",
   },
+  {
+    emoji: "💬",
+    titleKey: "nav.chat",
+    descKey: "home.chat_desc",
+    tags: ["Socket.io", "Real-time", "Node.js"],
+    path: "/chat",
+    gradient: "linear-gradient(135deg, #00b894 0%, #00cec9 100%)",
+  },
 ];
 
 const Home: React.FC = () => {
