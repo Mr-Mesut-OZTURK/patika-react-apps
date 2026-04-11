@@ -1,8 +1,64 @@
-# Getting Started with Create React App
+# Patika React Apps
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Patika.dev Front-End bootcamp kapsamında geliştirilen React uygulamalarının bir arada bulunduğu monorepo.
 
-## Available Scripts
+![screenshot](docs/preview.png)
+
+---
+
+## İçindekiler
+
+| No  | Uygulama                                                          | Açıklama                                            |
+| --- | ----------------------------------------------------------------- | --------------------------------------------------- |
+| 01  | [🌤 Weather App](./src/apps/weatherapp/README.md)                 | OpenWeatherMap API ile Türkiye hava durumu          |
+| 02  | [🧪 Rick and Morty Characters](./src/apps/rickandmorty/README.md) | GraphQL ile karakter listeleme, arama ve filtreleme |
+
+---
+
+## Teknoloji Yığını
+
+- **React 18** + **TypeScript** (strict mode)
+- **React Router v7** — uygulamalar arası gezinme
+- **Apollo Client v4** — GraphQL
+- **MUI (Material UI) v5** — WeatherApp UI bileşenleri
+- **CSS Modules** — bileşen bazlı stilendirme
+- Create React App (react-scripts 5)
+
+---
+
+## Kurulum & Çalıştırma
+
+```bash
+# Bağımlılıkları yükle
+npm install
+
+# Geliştirme sunucusunu başlat  (http://localhost:3000)
+npm run dev
+
+# Production build
+npm run build
+```
+
+> **Not:** Weather App için `.env` dosyasına `REACT_APP_WEATHER_API_KEY` anahtarını eklemeyi unutma.
+
+---
+
+## Proje Yapısı
+
+```
+src/
+├── App.tsx              # Router + navbar
+├── index.tsx
+└── apps/
+    ├── weatherapp/      # Hava durumu uygulaması
+    └── rickandmorty/    # Rick & Morty karakterleri
+```
+
+---
+
+## Lisans
+
+MIT
 
 In the project directory, you can run:
 

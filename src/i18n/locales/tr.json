@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "weather": "Hava Durumu",
+    "rickmorty": "Rick & Morty"
+  },
+  "home": {
+    "title": "Patika React Apps",
+    "subtitle": "Patika.dev Front-End bootcamp kapsamında geliştirilen uygulamalar",
+    "open": "Aç →",
+    "weather_desc": "Türkiye'deki 81 şehir için anlık hava durumu. Sıcaklık, nem, hissedilen ısı ve hava koşulları.",
+    "rickmorty_desc": "GraphQL API ile tüm Rick and Morty karakterlerini listele, ada göre ara, status / cinsiyet / tür / lokasyon bazlı filtrele."
+  },
+  "weather": {
+    "title": "🌤 Hava Durumu",
+    "cities_label": "Şehirler",
+    "loading": "Yükleniyor...",
+    "error": "⚠️ Hava durumu alınamadı. API anahtarını kontrol et.",
+    "temp": "Sıcaklık",
+    "feels_like": "Hissedilen",
+    "humidity": "Nem",
+    "max_min": "Maks / Min"
+  },
+  "rickmorty": {
+    "search_placeholder": "Karakter ara...",
+    "search_btn": "Ara",
+    "filters_title": "Filtreler",
+    "filters_show": "Filtreleri Göster",
+    "filters_hide": "Filtreleri Gizle",
+    "filter_status": "Durum",
+    "filter_gender": "Cinsiyet",
+    "filter_species": "Tür",
+    "filter_location": "Lokasyon",
+    "filter_all": "Tümü",
+    "clear_filters": "Filtreleri Temizle",
+    "loading": "Karakterler yükleniyor...",
+    "error": "Hata: {{message}}",
+    "no_result": "Karakter bulunamadı.",
+    "count_one": "{{count}} karakter bulundu",
+    "count_other": "{{count}} karakter bulundu",
+    "count_in": " \"{{location}}\" konumunda"
+  }
+}

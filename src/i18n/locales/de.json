@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "weather": "Wetter-App",
+    "rickmorty": "Rick & Morty"
+  },
+  "home": {
+    "title": "Patika React Apps",
+    "subtitle": "Im Rahmen des Patika.dev Front-End Bootcamps entwickelte Anwendungen",
+    "open": "Öffnen →",
+    "weather_desc": "Aktuelles Wetter für 81 Städte in der Türkei. Temperatur, Luftfeuchtigkeit, gefühlte Temperatur und Wetterbedingungen.",
+    "rickmorty_desc": "Liste alle Rick-and-Morty-Charaktere mit der GraphQL-API, suche nach Name und filtere nach Status, Geschlecht, Spezies und Standort."
+  },
+  "weather": {
+    "title": "🌤 Wetter",
+    "cities_label": "Städte",
+    "loading": "Wird geladen...",
+    "error": "⚠️ Wetterdaten konnten nicht abgerufen werden. Bitte API-Schlüssel prüfen.",
+    "temp": "Temperatur",
+    "feels_like": "Gefühlt",
+    "humidity": "Luftfeuchte",
+    "max_min": "Max / Min"
+  },
+  "rickmorty": {
+    "search_placeholder": "Charakter suchen...",
+    "search_btn": "Suchen",
+    "filters_title": "Filter",
+    "filters_show": "Filter anzeigen",
+    "filters_hide": "Filter ausblenden",
+    "filter_status": "Status",
+    "filter_gender": "Geschlecht",
+    "filter_species": "Spezies",
+    "filter_location": "Standort",
+    "filter_all": "Alle",
+    "clear_filters": "Filter löschen",
+    "loading": "Charaktere werden geladen...",
+    "error": "Fehler: {{message}}",
+    "no_result": "Keine Charaktere gefunden.",
+    "count_one": "{{count}} Charakter gefunden",
+    "count_other": "{{count}} Charaktere gefunden",
+    "count_in": " in \"{{location}}\""
+  }
+}

@@ -1,3 +1,108 @@
 .App {
-  padding:20px;
+  /* padding managed per-app */
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #0f0e17;
+  border-bottom: 1px solid #2a2a45;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+/* Hamburger button – hidden on desktop */
+.app-nav-hamburger {
+  display: none;
+  background: transparent;
+  border: 1px solid #3a3a60;
+  color: #a8b2d8;
+  font-size: 20px;
+  line-height: 1;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.app-nav-hamburger:hover {
+  background: #1a1a2e;
+  color: #a6f080;
+}
+
+/* Nav links wrapper */
+.app-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-nav a {
+  color: #a8b2d8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  white-space: nowrap;
+}
+
+.app-nav-home span {
+  font-size: 13px;
+}
+
+.app-nav a.active,
+.app-nav a:hover {
+  background: #1a1a2e;
+  color: #a6f080;
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .app-nav {
+    padding: 8px 16px;
+    row-gap: 0;
+  }
+
+  .app-nav-hamburger {
+    display: block;
+  }
+
+  /* Language switcher stays on the right in the same row as hamburger */
+  .app-nav > :last-child {
+    margin-left: auto;
+  }
+
+  /* Links hidden by default on mobile */
+  .app-nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 8px 0 4px;
+    border-top: 1px solid #2a2a45;
+    margin-top: 4px;
+    gap: 2px;
+    order: 10;
+  }
+
+  .app-nav-links--open {
+    display: flex;
+  }
+
+  .app-nav-links a {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 6px;
+  }
 }

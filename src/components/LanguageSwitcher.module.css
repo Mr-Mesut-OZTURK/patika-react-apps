@@ -1,0 +1,51 @@
+.switcher {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #3a3a60;
+  background: transparent;
+  color: #a8b2d8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.btn:hover {
+  background: #1a1a2e;
+  color: #e0e0ff;
+  border-color: #5a5a90;
+}
+
+.active {
+  background: #1a1a2e;
+  color: #a6f080;
+  border-color: #a6f080;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* On small screens show only the flag emoji, hide the text label */
+@media (max-width: 420px) {
+  .label {
+    display: none;
+  }
+
+  .btn {
+    padding: 4px 7px;
+  }
+}

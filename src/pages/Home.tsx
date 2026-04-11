@@ -1,0 +1,77 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import styles from "./Home.module.css";
+
+interface AppCard {
+  emoji: string;
+  titleKey: string;
+  descKey: string;
+  tags: string[];
+  path: string;
+  gradient: string;
+}
+
+const apps: AppCard[] = [
+  {
+    emoji: "🌤",
+    titleKey: "nav.weather",
+    descKey: "home.weather_desc",
+    tags: ["OpenWeatherMap API", "React Context", "MUI"],
+    path: "/weather",
+    gradient: "linear-gradient(135deg, #74b9ff 0%, #0984e3 100%)",
+  },
+  {
+    emoji: "🧪",
+    titleKey: "nav.rickmorty",
+    descKey: "home.rickmorty_desc",
+    tags: ["GraphQL", "Apollo Client", "Pagination"],
+    path: "/rickmorty",
+    gradient: "linear-gradient(135deg, #a8e6cf 0%, #3d9970 100%)",
+  },
+];
+
+const Home: React.FC = () => {
+  const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  return (
+    <div className={styles.page}>
+      <header className={styles.hero}>
+        <h1 className={styles.heroTitle}>{t("home.title")}</h1>
+        <p className={styles.heroSub}>{t("home.subtitle")}</p>
+      </header>
+
+      <main className={styles.grid}>
+        {apps.map((app) => (
+          <button
+            key={app.path}
+            className={styles.card}
+            onClick={() => navigate(app.path)}
+          >
+            <div
+              className={styles.cardBanner}
+              style={{ background: app.gradient }}
+            >
+              <span className={styles.cardEmoji}>{app.emoji}</span>
+            </div>
+            <div className={styles.cardBody}>
+              <h2 className={styles.cardTitle}>{t(app.titleKey)}</h2>
+              <p className={styles.cardDesc}>{t(app.descKey)}</p>
+              <div className={styles.tags}>
+                {app.tags.map((tag) => (
+                  <span key={tag} className={styles.tag}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <span className={styles.cta}>{t("home.open")}</span>
+            </div>
+          </button>
+        ))}
+      </main>
+    </div>
+  );
+};
+
+export default Home;

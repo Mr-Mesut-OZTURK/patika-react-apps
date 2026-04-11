@@ -1,0 +1,145 @@
+.page {
+  min-height: 100vh;
+  background: #0f0e17;
+  color: #fffffe;
+}
+
+.hero {
+  text-align: center;
+  padding: 72px 24px 40px;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 900;
+  margin: 0 0 12px;
+  background: linear-gradient(135deg, #a7f3d0 0%, #6ee7b7 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSub {
+  font-size: 1.05rem;
+  color: #a8b2d8;
+  margin: 0;
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  justify-content: center;
+  gap: 28px;
+  padding: 16px 32px 64px;
+}
+
+.card {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #1a1a2e;
+  border: 1px solid #2a2a45;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border-color: #4a4a70;
+}
+
+.card:focus-visible {
+  outline: 2px solid #a6f080;
+  outline-offset: 3px;
+}
+
+.cardBanner {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardEmoji {
+  font-size: 64px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.cardBody {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fffffe;
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #a8b2d8;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.tag {
+  font-size: 11px;
+  background: #2a2a45;
+  color: #8892b0;
+  border-radius: 20px;
+  padding: 3px 10px;
+  border: 1px solid #3a3a60;
+}
+
+.cta {
+  margin-top: auto;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #a6f080;
+  padding-top: 8px;
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 16px 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 12px 16px 48px;
+    gap: 16px;
+  }
+
+  .cardBanner {
+    height: 110px;
+  }
+
+  .cardEmoji {
+    font-size: 52px;
+  }
+
+  .cardBody {
+    padding: 16px 18px 20px;
+  }
+}
