@@ -37,6 +37,14 @@ const apps: AppCard[] = [
     path: "/bmi",
     gradient: "linear-gradient(135deg, #fd79a8 0%, #e84393 100%)",
   },
+  {
+    emoji: "👗",
+    titleKey: "nav.shop",
+    descKey: "home.shop_desc",
+    tags: ["Axios", "MockAPI.io", "Styled Components", "localStorage"],
+    path: "/shop",
+    gradient: "linear-gradient(135deg, #f8a5c2 0%, #c0392b 100%)",
+  },
 ];
 
 const Home: React.FC = () => {

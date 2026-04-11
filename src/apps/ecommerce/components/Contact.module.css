@@ -1,0 +1,164 @@
+.page {
+  padding: 24px 0 48px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Info panel */
+.info {
+  background: linear-gradient(145deg, #1e1e1e, #1a1a1a);
+  border: 1px solid #2a2a2a;
+  border-radius: 18px;
+  padding: 32px;
+}
+
+.infoTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: #e0e0e0;
+  margin: 0 0 12px;
+}
+
+.infoText {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.7;
+  margin: 0 0 28px;
+}
+
+.contactDetails {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contactDetails li {
+  font-size: 14px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detailIcon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* Form */
+.form {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 18px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.input,
+.textarea {
+  background: #131313;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: #e0e0e0;
+  font-size: 14px;
+  padding: 12px 16px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #e63950;
+}
+
+.inputError {
+  border-color: #c0392b !important;
+}
+
+.textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.error {
+  font-size: 12px;
+  color: #e06060;
+}
+
+/* Success */
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.successIcon {
+  font-size: 56px;
+}
+
+.successTitle {
+  font-size: 24px;
+  font-weight: 800;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.successText {
+  font-size: 16px;
+  color: #888;
+  margin: 0;
+  max-width: 380px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,130 @@
+.app {
+  min-height: 100vh;
+  background: #0d0d0d;
+  color: #e0e0e0;
+}
+
+/* Header */
+.appHeader {
+  background: #111;
+  border-bottom: 1px solid #1e1e1e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px 16px;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brandEmoji {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.brandName {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.brandTagline {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Shop Nav */
+.shopNav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.shopNav::-webkit-scrollbar {
+  display: none;
+}
+
+.navItem {
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.navItem:hover {
+  color: #ccc;
+}
+
+.navActive {
+  color: #e63950 !important;
+  border-bottom-color: #e63950 !important;
+}
+
+.tabBadge {
+  background: #e63950;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Main */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 600px) {
+  .headerContent {
+    padding: 14px 16px 10px;
+  }
+
+  .brandName {
+    font-size: 18px;
+  }
+
+  .shopNav {
+    padding: 0 16px;
+  }
+
+  .navItem {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .main {
+    padding: 0 16px;
+  }
+}

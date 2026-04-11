@@ -1,0 +1,154 @@
+.page {
+  padding: 24px 0 48px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #e0e0e0;
+  margin: 0 0 4px;
+}
+
+.count {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #444;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.imgWrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #111;
+  cursor: pointer;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.imgWrap:hover .img {
+  transform: scale(1.05);
+}
+
+.categoryBadge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #e0e0e0;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 3px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cardBody {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.name {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #e0e0e0;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s;
+}
+
+.name:hover {
+  color: #e63950;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #e63950;
+}
+
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.sizeChip {
+  background: #252525;
+  border: 1px solid #333;
+  color: #aaa;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+.cardActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* Empty state */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.emptyIcon {
+  font-size: 56px;
+  color: #ff6b9d;
+}
+
+.emptyText {
+  font-size: 18px;
+  color: #777;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
