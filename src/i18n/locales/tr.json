@@ -4,7 +4,8 @@
     "weather": "Hava Durumu",
     "rickmorty": "Rick & Morty",
     "bmi": "BMI Hesapla",
-    "shop": "Moda Mağazası"
+    "shop": "Moda Mağazası",
+    "notes": "Notlar"
   },
   "home": {
     "title": "Patika React Apps",
@@ -13,7 +14,8 @@
     "weather_desc": "Türkiye'deki 81 şehir için anlık hava durumu. Sıcaklık, nem, hissedilen ısı ve hava koşulları.",
     "rickmorty_desc": "GraphQL API ile tüm Rick and Morty karakterlerini listele, ada göre ara, status / cinsiyet / tür / lokasyon bazlı filtrele.",
     "bmi_desc": "Boy ve kilonuzu girerek Vücut Kitle Endeksinizi hesaplayın. Sonuca göre kişisel diyet önerileri alın.",
-    "shop_desc": "Kıyafet koleksiyonumuzu keşfet. Sepete ekle, favorilere al, sezon trendlerini takip et."
+    "shop_desc": "Kıyafet koleksiyonumuzu keşfet. Sepete ekle, favorilere al, sezon trendlerini takip et.",
+    "notes_desc": "Notion tarzı not uygulaması. Not oluştur, düzenle, sil, sabitle ve tarayıcı kapatılsa bile notların korunmaya devam etsin."
   },
   "weather": {
     "title": "🌤 Hava Durumu",
@@ -167,5 +169,37 @@
     "subject_return": "İade / Değişim",
     "subject_product": "Ürün Hakkında",
     "subject_other": "Diğer"
+  },
+  "notes": {
+    "app_title": "Notlar",
+    "new_note": "Yeni Not",
+    "search_placeholder": "Notlarda ara...",
+    "untitled": "Başlıksız",
+    "no_notes": "Henüz not yok.",
+    "create_first": "İlk notu oluştur",
+    "no_search_results": "Arama sonucu bulunamadı.",
+    "pinned": "Sabitlenmiş",
+    "all_notes": "Tüm Notlar",
+    "notes_count": "not",
+    "pin": "Sabitle",
+    "unpin": "Sabitlemeyi Kaldır",
+    "delete": "Sil",
+    "confirm_delete": "Emin misiniz?",
+    "confirm_yes": "Evet, sil",
+    "title_placeholder": "Başlık...",
+    "content_placeholder": "Yazmaya başla...",
+    "select_or_create": "Bir not seçin",
+    "empty_subtitle": "Sol tarafta bir nota tıklayın veya yeni bir not oluşturun.",
+    "just_now": "Az önce",
+    "min_ago": "dk önce",
+    "hr_ago": "sa önce",
+    "yesterday": "Dün",
+    "change_color": "Rengi Değiştir",
+    "change_emoji": "İkonu Değiştir",
+    "words": "kelime",
+    "chars": "karakter",
+    "last_saved": "Son kayıt",
+    "note_not_found": "Not bulunamadı.",
+    "back": "Geri Dön"
   }
 }

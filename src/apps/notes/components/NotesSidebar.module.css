@@ -1,0 +1,329 @@
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  height: 100%;
+  background: #111;
+  border-right: 1px solid #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 999;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    height: calc(100vh - 57px);
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .sidebarOpen {
+    transform: translateX(0);
+  }
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid #1a1a1a;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandIcon {
+  font-size: 18px;
+}
+
+.brandName {
+  font-size: 14px;
+  font-weight: 800;
+  color: #e0e0e0;
+  letter-spacing: -0.3px;
+}
+
+.newBtn {
+  width: 30px;
+  height: 30px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #ccc;
+  font-size: 20px;
+  line-height: 1;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.newBtn:hover {
+  background: #e63950;
+  border-color: #e63950;
+  color: #fff;
+}
+
+/* ── Search ── */
+.searchWrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 12px;
+  background: #1a1a1a;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 0 10px;
+  flex-shrink: 0;
+}
+
+.searchIcon {
+  font-size: 12px;
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ccc;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.clearSearch {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 4px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.clearSearch:hover {
+  color: #e0e0e0;
+}
+
+/* ── Notes list ── */
+.list {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 8px;
+}
+
+.list::-webkit-scrollbar {
+  width: 3px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 2px;
+}
+
+/* ── Section ── */
+.section {
+  padding-bottom: 2px;
+}
+
+.sectionLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 16px 4px;
+}
+
+/* ── Note item ── */
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 12px 9px 14px;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: background 0.12s;
+  position: relative;
+  outline: none;
+}
+
+.item:hover {
+  background: #191919;
+}
+
+.item:hover .itemActions {
+  opacity: 1;
+}
+
+.itemActive {
+  background: #161616;
+  border-left-width: 2px;
+}
+
+.itemEmoji {
+  font-size: 17px;
+  flex-shrink: 0;
+  margin-top: 1px;
+  line-height: 1.3;
+}
+
+.itemMeta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.itemTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+
+.itemDate {
+  font-size: 11px;
+  color: #4a4a4a;
+  line-height: 1.3;
+}
+
+.itemPreview {
+  font-size: 11px;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4;
+}
+
+/* ── Item action buttons ── */
+.itemActions {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  flex-shrink: 0;
+}
+
+.actionBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #555;
+  transition:
+    background 0.15s,
+    color 0.15s;
+  line-height: 1;
+}
+
+.actionBtn:hover {
+  background: #252525;
+  color: #ccc;
+}
+
+.pinActive {
+  opacity: 1 !important;
+  color: #f7c948 !important;
+}
+
+.deleteBtn:hover {
+  color: #e63950 !important;
+}
+
+.deleteBtnConfirm {
+  background: #e63950 !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* ── Empty state ── */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 36px 16px;
+  text-align: center;
+}
+
+.emptyText {
+  font-size: 13px;
+  color: #444;
+  margin: 0;
+}
+
+.createFirstBtn {
+  background: transparent;
+  border: 1px solid #2a2a2a;
+  color: #888;
+  border-radius: 7px;
+  font-size: 12px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.createFirstBtn:hover {
+  background: #1a1a1a;
+  border-color: #e63950;
+  color: #e63950;
+}
+
+/* ── Footer ── */
+.footer {
+  padding: 10px 16px;
+  border-top: 1px solid #1a1a1a;
+  flex-shrink: 0;
+}
+
+.count {
+  font-size: 11px;
+  color: #3a3a3a;
+}

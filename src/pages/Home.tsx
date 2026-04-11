@@ -45,6 +45,14 @@ const apps: AppCard[] = [
     path: "/shop",
     gradient: "linear-gradient(135deg, #f8a5c2 0%, #c0392b 100%)",
   },
+  {
+    emoji: "📒",
+    titleKey: "nav.notes",
+    descKey: "home.notes_desc",
+    tags: ["localStorage", "React Router", "Notion-like"],
+    path: "/notes",
+    gradient: "linear-gradient(135deg, #636e72 0%, #2d3436 100%)",
+  },
 ];
 
 const Home: React.FC = () => {

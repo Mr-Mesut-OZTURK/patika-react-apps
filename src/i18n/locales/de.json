@@ -4,7 +4,8 @@
     "weather": "Wetter-App",
     "rickmorty": "Rick & Morty",
     "bmi": "BMI-Rechner",
-    "shop": "Modeshop"
+    "shop": "Modeshop",
+    "notes": "Notizen"
   },
   "home": {
     "title": "Patika React Apps",
@@ -13,7 +14,8 @@
     "weather_desc": "Aktuelles Wetter für 81 Städte in der Türkei. Temperatur, Luftfeuchtigkeit, gefühlte Temperatur und Wetterbedingungen.",
     "rickmorty_desc": "Liste alle Rick-and-Morty-Charaktere mit der GraphQL-API, suche nach Name und filtere nach Status, Geschlecht, Spezies und Standort.",
     "bmi_desc": "Gib Größe und Gewicht ein, um deinen Body-Mass-Index zu berechnen und persönliche Diät-Empfehlungen zu erhalten.",
-    "shop_desc": "Entdecke unsere Kleidungskollektion. Füge Artikel zum Warenkorb hinzu, speichere Favoriten und verfolge die neuesten Trends."
+    "shop_desc": "Entdecke unsere Kleidungskollektion. Füge Artikel zum Warenkorb hinzu, speichere Favoriten und verfolge die neuesten Trends.",
+    "notes_desc": "Eine Notion-ähnliche Notiz-App. Erstelle, bearbeite, lösche und hefte Notizen an — alles wird automatisch im Browser gespeichert."
   },
   "weather": {
     "title": "🌤 Wetter",
@@ -167,5 +169,37 @@
     "subject_return": "Rückgabe / Austausch",
     "subject_product": "Über ein Produkt",
     "subject_other": "Sonstiges"
+  },
+  "notes": {
+    "app_title": "Notizen",
+    "new_note": "Neue Notiz",
+    "search_placeholder": "Notizen durchsuchen...",
+    "untitled": "Ohne Titel",
+    "no_notes": "Noch keine Notizen.",
+    "create_first": "Erste Notiz erstellen",
+    "no_search_results": "Keine Ergebnisse gefunden.",
+    "pinned": "Angeheftet",
+    "all_notes": "Alle Notizen",
+    "notes_count": "Notizen",
+    "pin": "Anheften",
+    "unpin": "Löslösen",
+    "delete": "Löschen",
+    "confirm_delete": "Bist du sicher?",
+    "confirm_yes": "Ja, löschen",
+    "title_placeholder": "Titel...",
+    "content_placeholder": "Schreib los...",
+    "select_or_create": "Notiz auswählen",
+    "empty_subtitle": "Klicke links auf eine Notiz oder erstelle eine neue.",
+    "just_now": "Gerade eben",
+    "min_ago": "Min. her",
+    "hr_ago": "Std. her",
+    "yesterday": "Gestern",
+    "change_color": "Farbe ändern",
+    "change_emoji": "Symbol ändern",
+    "words": "Wörter",
+    "chars": "Zeichen",
+    "last_saved": "Gespeichert",
+    "note_not_found": "Notiz nicht gefunden.",
+    "back": "Zurück"
   }
 }
