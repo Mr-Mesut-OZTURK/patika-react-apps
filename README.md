@@ -2,57 +2,117 @@
 
 > Patika.dev Front-End bootcamp kapsamında geliştirilen React uygulamalarının bir arada bulunduğu monorepo.
 
-![screenshot](docs/preview.png)
+![Ana Sayfa](docs/preview.png)
 
 ---
 
-## İçindekiler
+## 📦 Uygulamalar
 
-| No  | Uygulama                                                          | Açıklama                                            |
-| --- | ----------------------------------------------------------------- | --------------------------------------------------- |
-| 01  | [🌤 Weather App](./src/apps/weatherapp/README.md)                 | OpenWeatherMap API ile Türkiye hava durumu          |
-| 02  | [🧪 Rick and Morty Characters](./src/apps/rickandmorty/README.md) | GraphQL ile karakter listeleme, arama ve filtreleme |
-
----
-
-## Teknoloji Yığını
-
-- **React 18** + **TypeScript** (strict mode)
-- **React Router v7** — uygulamalar arası gezinme
-- **Apollo Client v4** — GraphQL
-- **MUI (Material UI) v5** — WeatherApp UI bileşenleri
-- **CSS Modules** — bileşen bazlı stilendirme
-- Create React App (react-scripts 5)
+| No  | Uygulama                                             | Yol          | Açıklama                                        | Teknolojiler                                  |
+| --- | ---------------------------------------------------- | ------------ | ----------------------------------------------- | --------------------------------------------- |
+| 01  | 🌤 [Weather App](./src/apps/weatherapp/README.md)    | `/weather`   | Türkiye'deki 81 şehir için anlık hava durumu    | OpenWeatherMap API, React Context, MUI        |
+| 02  | 🧪 [Rick & Morty](./src/apps/rickandmorty/README.md) | `/rickmorty` | Karakter listeleme, arama, çoklu filtreleme     | GraphQL, Apollo Client, Pagination            |
+| 03  | 📊 [BMI Hesapla](./src/apps/bmi/README.md)           | `/bmi`       | Vücut kitle endeksi hesaplama + diyet önerileri | localStorage, Styled Components, React Router |
+| 04  | 👗 [Moda Mağazası](./src/apps/ecommerce/README.md)   | `/shop`      | Ürün listeleme, sepet, favoriler                | Axios, MockAPI.io, Styled Components          |
+| 05  | 📒 [Notlar](./src/apps/notes/README.md)              | `/notes`     | Notion tarzı not uygulaması                     | localStorage, React Router                    |
+| 06  | 💬 [Canlı Sohbet](./src/apps/chat/README.md)         | `/chat`      | Gerçek zamanlı çok kullanıcılı sohbet           | Socket.io, Node.js backend                    |
+| 07  | 🪙 [Kripto Para](./src/apps/crypto/README.md)        | `/crypto`    | Anlık kripto fiyat takibi, arama                | CoinGecko API, Axios, React Hooks             |
 
 ---
 
-## Kurulum & Çalıştırma
+## 🛠 Teknoloji Yığını
+
+| Teknoloji                          | Kullanım                            |
+| ---------------------------------- | ----------------------------------- |
+| React 18 + TypeScript (strict)     | Uygulama çatısı                     |
+| React Router v7                    | Uygulamalar arası gezinme           |
+| Apollo Client v4                   | GraphQL (Rick & Morty)              |
+| MUI v5                             | WeatherApp UI bileşenleri           |
+| Axios                              | HTTP istekleri (E-commerce, Crypto) |
+| Socket.io                          | Gerçek zamanlı iletişim (Chat)      |
+| Styled Components                  | BMI + E-commerce stilleri           |
+| CSS Modules                        | Bileşen bazlı stilendirme           |
+| react-i18next                      | TR / EN / DE çok dil desteği        |
+| Create React App (react-scripts 5) | Build araçları                      |
+
+---
+
+## 🚀 Kurulum & Çalıştırma
 
 ```bash
 # Bağımlılıkları yükle
 npm install
 
-# Geliştirme sunucusunu başlat  (http://localhost:3000)
-npm run dev
+# Geliştirme sunucusunu başlat (http://localhost:3000)
+npm start
 
 # Production build
 npm run build
 ```
 
-> **Not:** Weather App için `.env` dosyasına `REACT_APP_WEATHER_API_KEY` anahtarını eklemeyi unutma.
+### Ortam Değişkenleri
+
+`.env` dosyası oluştur ve aşağıdaki anahtarları ekle:
+
+```env
+REACT_APP_WEATHER_API_KEY=your_openweathermap_key
+REACT_APP_COINGECKO_KEY=your_coingecko_key
+REACT_APP_SOCKET_URL=http://localhost:3001
+```
+
+### Chat Sunucusunu Başlatma
+
+```bash
+cd server
+npm install
+node index.js
+# Sunucu http://localhost:3001 adresinde çalışır
+```
 
 ---
 
-## Proje Yapısı
+## 📁 Proje Yapısı
 
 ```
 src/
-├── App.tsx              # Router + navbar
+├── App.tsx                  # Router + navbar
 ├── index.tsx
+├── i18n/
+│   └── locales/
+│       ├── tr.json          # Türkçe
+│       ├── en.json          # İngilizce
+│       └── de.json          # Almanca
+├── pages/
+│   └── Home.tsx             # Ana sayfa — uygulama kartları
 └── apps/
-    ├── weatherapp/      # Hava durumu uygulaması
-    └── rickandmorty/    # Rick & Morty karakterleri
+    ├── weatherapp/          # 🌤 Hava durumu
+    ├── rickandmorty/        # 🧪 Rick & Morty
+    ├── bmi/                 # 📊 BMI hesaplama
+    ├── ecommerce/           # 👗 Moda mağazası
+    ├── notes/               # 📒 Notlar
+    ├── chat/                # 💬 Canlı sohbet
+    └── crypto/              # 🪙 Kripto para takibi
+server/
+└── index.js                 # Socket.io backend (Chat için)
 ```
+
+---
+
+## 🌍 Çok Dil Desteği
+
+Tüm uygulamalar **Türkçe**, **İngilizce** ve **Almanca** dillerini destekler.  
+Varsayılan dil **Almanca**'dır. Sağ üstteki dil seçici ile değiştirebilirsiniz.
+
+---
+
+## 🌐 Netlify Deploy
+
+```bash
+npm run build
+# build/ klasörünü Netlify'a deploy et
+```
+
+Netlify > Site settings > Environment variables bölümüne `.env` değişkenlerini eklemeyi unutmayın.
 
 ---
 

@@ -6,7 +6,8 @@
     "bmi": "BMI-Rechner",
     "shop": "Modeshop",
     "notes": "Notizen",
-    "chat": "Live-Chat"
+    "chat": "Live-Chat",
+    "crypto": "Krypto-Tracker"
   },
   "home": {
     "title": "Patika React Apps",
@@ -17,7 +18,8 @@
     "bmi_desc": "Gib Größe und Gewicht ein, um deinen Body-Mass-Index zu berechnen und persönliche Diät-Empfehlungen zu erhalten.",
     "shop_desc": "Entdecke unsere Kleidungskollektion. Füge Artikel zum Warenkorb hinzu, speichere Favoriten und verfolge die neuesten Trends.",
     "notes_desc": "Eine Notion-ähnliche Notiz-App. Erstelle, bearbeite, lösche und hefte Notizen an — alles wird automatisch im Browser gespeichert.",
-    "chat_desc": "Echtzeit-Chat-Anwendung. Mehrere Benutzer können gleichzeitig miteinander chatten. Sofortige Mehrbenutzer-Kommunikation über Socket.io."
+    "chat_desc": "Echtzeit-Chat-Anwendung. Mehrere Benutzer können gleichzeitig miteinander chatten. Sofortige Mehrbenutzer-Kommunikation über Socket.io.",
+    "crypto_desc": "Live-Kryptowährungspreise über die CoinGecko-API. Durchsuche die Top 100 Coins, suche nach Name und verfolge Marktdaten."
   },
   "weather": {
     "title": "🌤 Wetter",
@@ -223,5 +225,24 @@
     "users_title": "Online",
     "you": "(du)",
     "not_connected": "Keine Verbindung zum Server. Server starten:"
+  },
+  "crypto": {
+    "app_title": "🪙 Krypto-Tracker",
+    "subtitle": "Live-Marktdaten powered by CoinGecko API",
+    "search_placeholder": "Coin suchen... (Bitcoin, ETH...)",
+    "refresh": "Aktualisieren",
+    "coins_found": "Coins gefunden",
+    "loading": "Wird geladen...",
+    "error_rate_limit": "Anfragelimit überschritten. Bitte kurz warten und erneut versuchen.",
+    "error_fetch": "Daten konnten nicht abgerufen werden. Bitte Internetverbindung prüfen.",
+    "retry": "Erneut versuchen",
+    "rank": "Rang",
+    "price": "Preis",
+    "change_24h": "24h Änderung",
+    "market_cap": "Marktkapitalisierung",
+    "volume_24h": "24h Volumen",
+    "high_24h": "24h Hoch",
+    "low_24h": "24h Tief",
+    "no_results": "Keine Coins für Ihre Suche gefunden."
   }
 }

@@ -6,7 +6,8 @@
     "bmi": "BMI Calculator",
     "shop": "Fashion Store",
     "notes": "Notes",
-    "chat": "Live Chat"
+    "chat": "Live Chat",
+    "crypto": "Crypto Tracker"
   },
   "home": {
     "title": "Patika React Apps",
@@ -17,7 +18,8 @@
     "bmi_desc": "Enter your height and weight to calculate your Body Mass Index and receive personalised diet recommendations.",
     "shop_desc": "Explore our clothing collection. Add to cart, save favourites and follow the season's latest trends.",
     "notes_desc": "A Notion-style notes app. Create, edit, delete and pin notes — everything is saved in your browser automatically.",
-    "chat_desc": "Real-time chat application. Multiple users can message each other simultaneously. Instant multi-user communication via Socket.io."
+    "chat_desc": "Real-time chat application. Multiple users can message each other simultaneously. Instant multi-user communication via Socket.io.",
+    "crypto_desc": "Live cryptocurrency prices via CoinGecko API. Browse the top 100 coins, search by name and track market data."
   },
   "weather": {
     "title": "🌤 Weather",
@@ -223,5 +225,24 @@
     "users_title": "Online",
     "you": "(you)",
     "not_connected": "Cannot connect to server. To start it:"
+  },
+  "crypto": {
+    "app_title": "🪙 Crypto Tracker",
+    "subtitle": "Live market data powered by CoinGecko API",
+    "search_placeholder": "Search coins... (Bitcoin, ETH...)",
+    "refresh": "Refresh",
+    "coins_found": "coins found",
+    "loading": "Loading...",
+    "error_rate_limit": "Rate limit exceeded. Please wait a moment and try again.",
+    "error_fetch": "Failed to fetch data. Please check your internet connection.",
+    "retry": "Retry",
+    "rank": "Rank",
+    "price": "Price",
+    "change_24h": "24h Change",
+    "market_cap": "Market Cap",
+    "volume_24h": "24h Volume",
+    "high_24h": "24h High",
+    "low_24h": "24h Low",
+    "no_results": "No coins found matching your search."
   }
 }

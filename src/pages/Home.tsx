@@ -61,6 +61,14 @@ const apps: AppCard[] = [
     path: "/chat",
     gradient: "linear-gradient(135deg, #00b894 0%, #00cec9 100%)",
   },
+  {
+    emoji: "🪙",
+    titleKey: "nav.crypto",
+    descKey: "home.crypto_desc",
+    tags: ["CoinGecko API", "Axios", "React Hooks"],
+    path: "/crypto",
+    gradient: "linear-gradient(135deg, #f9ca24 0%, #f0932b 100%)",
+  },
 ];
 
 const Home: React.FC = () => {

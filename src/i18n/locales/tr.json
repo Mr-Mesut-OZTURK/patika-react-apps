@@ -6,7 +6,8 @@
     "bmi": "BMI Hesapla",
     "shop": "Moda Mağazası",
     "notes": "Notlar",
-    "chat": "Canlı Sohbet"
+    "chat": "Canlı Sohbet",
+    "crypto": "Kripto Para"
   },
   "home": {
     "title": "Patika React Apps",
@@ -17,7 +18,8 @@
     "bmi_desc": "Boy ve kilonuzu girerek Vücut Kitle Endeksinizi hesaplayın. Sonuca göre kişisel diyet önerileri alın.",
     "shop_desc": "Kıyafet koleksiyonumuzu keşfet. Sepete ekle, favorilere al, sezon trendlerini takip et.",
     "notes_desc": "Notion tarzı not uygulaması. Not oluştur, düzenle, sil, sabitle ve tarayıcı kapatılsa bile notların korunmaya devam etsin.",
-    "chat_desc": "Gerçek zamanlı sohbet uygulaması. Birden fazla kullanıcı aynı anda mesajlaşabilir. Socket.io ile anlık çok kullanıcılı iletişim."
+    "chat_desc": "Gerçek zamanlı sohbet uygulaması. Birden fazla kullanıcı aynı anda mesajlaşabilir. Socket.io ile anlık çok kullanıcılı iletişim.",
+    "crypto_desc": "CoinGecko API ile anlık kripto para fiyatları. İlk 100 coin'i listele, ada göre ara ve piyasa verilerini takip et."
   },
   "weather": {
     "title": "🌤 Hava Durumu",
@@ -223,5 +225,24 @@
     "users_title": "Çevrimiçi",
     "you": "(sen)",
     "not_connected": "Sunucuya bağlanılamıyor. Sunucuyu başlatmak için:"
+  },
+  "crypto": {
+    "app_title": "🪙 Kripto Para Takip",
+    "subtitle": "CoinGecko API ile anlık piyasa verileri",
+    "search_placeholder": "Coin ara... (Bitcoin, ETH...)",
+    "refresh": "Yenile",
+    "coins_found": "coin bulundu",
+    "loading": "Yükleniyor...",
+    "error_rate_limit": "İstek limiti aşıldı. Lütfen bir dakika bekleyip tekrar deneyin.",
+    "error_fetch": "Veriler alınamadı. İnternet bağlantınızı kontrol edin.",
+    "retry": "Tekrar Dene",
+    "rank": "Sıra",
+    "price": "Fiyat",
+    "change_24h": "24s Değişim",
+    "market_cap": "Piyasa Değeri",
+    "volume_24h": "24s Hacim",
+    "high_24h": "24s En Yüksek",
+    "low_24h": "24s En Düşük",
+    "no_results": "Arama kriterinize göre coin bulunamadı."
   }
 }

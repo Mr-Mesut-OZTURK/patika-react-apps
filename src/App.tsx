@@ -9,6 +9,7 @@ import BMIApp from "./apps/bmi/BMIApp";
 import EcommerceApp from "./apps/ecommerce/EcommerceApp";
 import NotesApp from "./apps/notes/NotesApp";
 import ChatApp from "./apps/chat/ChatApp";
+import CryptoApp from "./apps/crypto/CryptoApp";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const App: React.FC = () => {
@@ -51,6 +52,9 @@ const App: React.FC = () => {
           <NavLink to="/chat" onClick={close}>
             💬 {t("nav.chat")}
           </NavLink>
+          <NavLink to="/crypto" onClick={close}>
+            🪙 {t("nav.crypto")}
+          </NavLink>
         </div>
         <LanguageSwitcher />
       </nav>
@@ -63,6 +67,7 @@ const App: React.FC = () => {
           <Route path="/shop/*" element={<EcommerceApp />} />
           <Route path="/notes/*" element={<NotesApp />} />
           <Route path="/chat/*" element={<ChatApp />} />
+          <Route path="/crypto" element={<CryptoApp />} />
         </Routes>
       </div>
     </BrowserRouter>
