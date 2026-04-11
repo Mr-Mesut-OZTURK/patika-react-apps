@@ -2,9 +2,7 @@
 
 OpenWeatherMap API kullanarak Türkiye şehirlerine ait anlık hava durumu bilgilerini görüntüleyen React uygulaması.
 
-<img src="./assets/weatherApp.jpg" alt="Weather App Screenshot" width="700" />
-
-> _Ekran görüntüsünü `assets/weatherApp.jpg` yoluna koyabilirsin._
+<img src="../../../docs/weather-preview.png" alt="Weather App Screenshot" width="700" />
 
 ---
 
