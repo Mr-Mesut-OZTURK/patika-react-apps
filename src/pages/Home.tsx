@@ -29,6 +29,14 @@ const apps: AppCard[] = [
     path: "/rickmorty",
     gradient: "linear-gradient(135deg, #a8e6cf 0%, #3d9970 100%)",
   },
+  {
+    emoji: "📊",
+    titleKey: "nav.bmi",
+    descKey: "home.bmi_desc",
+    tags: ["localStorage", "Styled Components", "React Router"],
+    path: "/bmi",
+    gradient: "linear-gradient(135deg, #fd79a8 0%, #e84393 100%)",
+  },
 ];
 
 const Home: React.FC = () => {

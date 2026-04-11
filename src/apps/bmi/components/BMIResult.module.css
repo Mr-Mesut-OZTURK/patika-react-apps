@@ -1,0 +1,173 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 60px 20px;
+  color: #a8b2d8;
+  text-align: center;
+  font-size: 16px;
+}
+
+.card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a45;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cardHeader {
+  padding: 28px 28px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.scoreRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.scoreLabel {
+  font-size: 12px;
+  color: #a8b2d8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.score {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.categoryBadge {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 28px;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+/* Gauge */
+.gaugeContainer {
+  padding: 0 28px 24px;
+}
+
+.gaugeTrack {
+  position: relative;
+  height: 12px;
+  background: #2a2a45;
+  border-radius: 6px;
+  overflow: visible;
+  margin-bottom: 8px;
+}
+
+.gaugeFill {
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  transition: width 0.6s ease;
+}
+
+.gaugeMark {
+  position: absolute;
+  top: -4px;
+  width: 4px;
+  height: 20px;
+  background: #fff;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.gaugeLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #9e9e9e;
+  margin-top: 4px;
+}
+
+.gaugeZones {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 6px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* Stats row */
+.stats {
+  display: flex;
+  border-top: 1px solid #2a2a45;
+}
+
+.stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 8px;
+  border-right: 1px solid #2a2a45;
+  gap: 4px;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.statLabel {
+  font-size: 11px;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statValue {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fffffe;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .cardHeader {
+    padding: 20px 16px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .score {
+    font-size: 48px;
+  }
+
+  .gaugeContainer {
+    padding: 0 16px 20px;
+  }
+
+  .gaugeZones {
+    display: none;
+  }
+
+  .stat {
+    padding: 12px 4px;
+  }
+
+  .statValue {
+    font-size: 13px;
+  }
+}
