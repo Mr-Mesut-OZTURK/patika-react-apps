@@ -7,7 +7,8 @@
     "shop": "Fashion Store",
     "notes": "Notes",
     "chat": "Live Chat",
-    "crypto": "Crypto Tracker"
+    "crypto": "Crypto Tracker",
+    "memory": "Memory Game"
   },
   "home": {
     "title": "Patika React Apps",
@@ -19,7 +20,8 @@
     "shop_desc": "Explore our clothing collection. Add to cart, save favourites and follow the season's latest trends.",
     "notes_desc": "A Notion-style notes app. Create, edit, delete and pin notes — everything is saved in your browser automatically.",
     "chat_desc": "Real-time chat application. Multiple users can message each other simultaneously. Instant multi-user communication via Socket.io.",
-    "crypto_desc": "Live cryptocurrency prices via CoinGecko API. Browse the top 100 coins, search by name and track market data."
+    "crypto_desc": "Live cryptocurrency prices via CoinGecko API. Browse the top 100 coins, search by name and track market data.",
+    "memory_desc": "A 4x3 memory card game. Find all matching pairs in the fewest moves and save your best score to localStorage."
   },
   "weather": {
     "title": "🌤 Weather",
@@ -244,5 +246,16 @@
     "high_24h": "24h High",
     "low_24h": "24h Low",
     "no_results": "No coins found matching your search."
+  },
+  "memory": {
+    "app_title": "🧠 Memory Game",
+    "subtitle": "Find all matching pairs in the fewest moves!",
+    "moves": "Moves",
+    "best_score": "Best",
+    "pairs": "Pairs",
+    "restart": "Restart",
+    "game_over": "Congratulations!",
+    "finished_in": "You finished in {{moves}} moves.",
+    "new_record": "New record!"
   }
 }

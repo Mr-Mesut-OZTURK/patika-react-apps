@@ -1,0 +1,67 @@
+.scene {
+  width: 100%;
+  aspect-ratio: 1 / 1.1;
+  perspective: 600px;
+  cursor: pointer;
+  outline: none;
+}
+
+.scene:focus-visible .card {
+  box-shadow: 0 0 0 3px #6c5ce7;
+}
+
+.scene.matched {
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.85);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 14px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  user-select: none;
+}
+
+.front {
+  background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transition: background 0.2s;
+}
+
+.scene:not(.matched):hover .front {
+  background: linear-gradient(135deg, #5b4cdb 0%, #9188fd 100%);
+}
+
+.back {
+  background: #fff;
+  transform: rotateY(180deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ebebeb;
+  font-size: clamp(2rem, 6vw, 3rem);
+}

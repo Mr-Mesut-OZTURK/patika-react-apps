@@ -69,6 +69,14 @@ const apps: AppCard[] = [
     path: "/crypto",
     gradient: "linear-gradient(135deg, #f9ca24 0%, #f0932b 100%)",
   },
+  {
+    emoji: "🧠",
+    titleKey: "nav.memory",
+    descKey: "home.memory_desc",
+    tags: ["localStorage", "CSS 3D Flip", "Game Logic"],
+    path: "/memory",
+    gradient: "linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)",
+  },
 ];
 
 const Home: React.FC = () => {

@@ -7,7 +7,8 @@
     "shop": "Moda Mağazası",
     "notes": "Notlar",
     "chat": "Canlı Sohbet",
-    "crypto": "Kripto Para"
+    "crypto": "Kripto Para",
+    "memory": "Hafıza Oyunu"
   },
   "home": {
     "title": "Patika React Apps",
@@ -19,7 +20,8 @@
     "shop_desc": "Kıyafet koleksiyonumuzu keşfet. Sepete ekle, favorilere al, sezon trendlerini takip et.",
     "notes_desc": "Notion tarzı not uygulaması. Not oluştur, düzenle, sil, sabitle ve tarayıcı kapatılsa bile notların korunmaya devam etsin.",
     "chat_desc": "Gerçek zamanlı sohbet uygulaması. Birden fazla kullanıcı aynı anda mesajlaşabilir. Socket.io ile anlık çok kullanıcılı iletişim.",
-    "crypto_desc": "CoinGecko API ile anlık kripto para fiyatları. İlk 100 coin'i listele, ada göre ara ve piyasa verilerini takip et."
+    "crypto_desc": "CoinGecko API ile anlık kripto para fiyatları. İlk 100 coin'i listele, ada göre ara ve piyasa verilerini takip et.",
+    "memory_desc": "4x3 matris üzerinde hafıza oyunu. Eşleşen kartları bul, en az hamlede bitir ve en iyi skorunu localStorage'a kaydet."
   },
   "weather": {
     "title": "🌤 Hava Durumu",
@@ -244,5 +246,16 @@
     "high_24h": "24s En Yüksek",
     "low_24h": "24s En Düşük",
     "no_results": "Arama kriterinize göre coin bulunamadı."
+  },
+  "memory": {
+    "app_title": "🧠 Hafıza Oyunu",
+    "subtitle": "Eşleşen çiftleri bul, en az hamlede bitir!",
+    "moves": "Hamle",
+    "best_score": "En İyi",
+    "pairs": "Çiftler",
+    "restart": "Yeniden Başlat",
+    "game_over": "Tebrikler!",
+    "finished_in": "{{moves}} hamlede tamamladınız.",
+    "new_record": "Yeni rekor!"
   }
 }

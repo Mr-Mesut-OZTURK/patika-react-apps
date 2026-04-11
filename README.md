@@ -17,6 +17,7 @@
 | 05  | 📒 [Notlar](./src/apps/notes/README.md)              | `/notes`     | Notion tarzı not uygulaması                     | localStorage, React Router                    |
 | 06  | 💬 [Canlı Sohbet](./src/apps/chat/README.md)         | `/chat`      | Gerçek zamanlı çok kullanıcılı sohbet           | Socket.io, Node.js backend                    |
 | 07  | 🪙 [Kripto Para](./src/apps/crypto/README.md)        | `/crypto`    | Anlık kripto fiyat takibi, arama                | CoinGecko API, Axios, React Hooks             |
+| 08  | 🧠 [Hafıza Oyunu](./src/apps/memory/README.md)       | `/memory`    | 4×3 kart eşleştirme oyunu, en iyi skor kaydı    | localStorage, CSS 3D Flip, Game Logic         |
 
 ---
 

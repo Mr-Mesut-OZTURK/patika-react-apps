@@ -7,7 +7,8 @@
     "shop": "Modeshop",
     "notes": "Notizen",
     "chat": "Live-Chat",
-    "crypto": "Krypto-Tracker"
+    "crypto": "Krypto-Tracker",
+    "memory": "Memory-Spiel"
   },
   "home": {
     "title": "Patika React Apps",
@@ -19,7 +20,8 @@
     "shop_desc": "Entdecke unsere Kleidungskollektion. Füge Artikel zum Warenkorb hinzu, speichere Favoriten und verfolge die neuesten Trends.",
     "notes_desc": "Eine Notion-ähnliche Notiz-App. Erstelle, bearbeite, lösche und hefte Notizen an — alles wird automatisch im Browser gespeichert.",
     "chat_desc": "Echtzeit-Chat-Anwendung. Mehrere Benutzer können gleichzeitig miteinander chatten. Sofortige Mehrbenutzer-Kommunikation über Socket.io.",
-    "crypto_desc": "Live-Kryptowährungspreise über die CoinGecko-API. Durchsuche die Top 100 Coins, suche nach Name und verfolge Marktdaten."
+    "crypto_desc": "Live-Kryptowährungspreise über die CoinGecko-API. Durchsuche die Top 100 Coins, suche nach Name und verfolge Marktdaten.",
+    "memory_desc": "Ein 4x3-Memory-Kartenspiel. Finde alle Paare in möglichst wenigen Zügen und speichere deinen besten Score im localStorage."
   },
   "weather": {
     "title": "🌤 Wetter",
@@ -244,5 +246,16 @@
     "high_24h": "24h Hoch",
     "low_24h": "24h Tief",
     "no_results": "Keine Coins für Ihre Suche gefunden."
+  },
+  "memory": {
+    "app_title": "🧠 Memory-Spiel",
+    "subtitle": "Finde alle Paare in möglichst wenigen Zügen!",
+    "moves": "Züge",
+    "best_score": "Bestzeit",
+    "pairs": "Paare",
+    "restart": "Neu starten",
+    "game_over": "Glückwunsch!",
+    "finished_in": "In {{moves}} Zügen geschafft.",
+    "new_record": "Neuer Rekord!"
   }
 }
