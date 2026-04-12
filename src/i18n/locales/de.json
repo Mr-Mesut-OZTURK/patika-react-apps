@@ -10,7 +10,8 @@
     "crypto": "Krypto-Tracker",
     "memory": "Memory-Spiel",
     "books": "Bücher-Suche",
-    "rps": "Schere Stein Papier"
+    "rps": "Schere Stein Papier",
+    "formbuilder": "Formular-Builder"
   },
   "home": {
     "title": "Patika React Apps",
@@ -29,7 +30,8 @@
     "crypto_desc": "Live-Kryptowährungspreise über die CoinGecko-API. Durchsuche die Top 100 Coins, suche nach Name und verfolge Marktdaten.",
     "memory_desc": "Ein 4x3-Memory-Kartenspiel. Finde alle Paare in möglichst wenigen Zügen und speichere deinen besten Score im localStorage.",
     "books_desc": "Bücher und Autoren mit der Google Books API suchen. Cover-Bilder anzeigen und im Detail-Modal Seitenzahl, Erscheinungsdatum und mehr abrufen.",
-    "rps_desc": "Spiele Schere Stein Papier gegen den Computer! Runde gewinnen +1, verlieren -1. Wer zuerst ±3 erreicht, gewinnt."
+    "rps_desc": "Spiele Schere Stein Papier gegen den Computer! Runde gewinnen +1, verlieren -1. Wer zuerst ±3 erreicht, gewinnt.",
+    "formbuilder_desc": "Erstelle Formulare per Drag-and-Drop. Texteingaben, Textbereiche und Dropdowns hinzufügen, Bezeichnungen bearbeiten, Pflichtfelder markieren und Formular in der Vorschau anzeigen."
   },
   "weather": {
     "title": "🌤 Wetter",
@@ -308,5 +310,39 @@
     "desc_scissors_paper": "✂️ Schere schneidet 📄 Papier!",
     "desc_paper_rock": "📄 Papier wickelt 🪨 Stein ein!",
     "desc_draw": "🤝 Unentschieden! Keine Punkte."
+  },
+  "fb": {
+    "title": "Formular-Builder",
+    "subtitle": "Ziehen • Ablegen • Anpassen • Vorschau",
+    "toolbox": "Werkzeugkasten",
+    "toolbox_hint": "Ziehe eine Komponente auf die Fläche oder klicke zum Hinzufügen.",
+    "toolbox_tip": "Felder können per Drag-and-Drop innerhalb der Fläche sortiert werden.",
+    "tool_text": "Texteingabe",
+    "tool_text_desc": "Einzeiliges Textfeld",
+    "tool_textarea": "Textbereich",
+    "tool_textarea_desc": "Mehrzeiliges Textfeld",
+    "tool_dropdown": "Dropdown",
+    "tool_dropdown_desc": "Aus Optionen auswählen",
+    "canvas_empty": "Fläche ist leer",
+    "canvas_hint": "Ziehe ein Feld aus dem Werkzeugkasten oder klicke darauf.",
+    "drop_here": "Hier ablegen, um ein Feld hinzuzufügen",
+    "fields": "Felder",
+    "label": "Bezeichnung",
+    "placeholder": "Platzhalter",
+    "required": "Pflichtfeld",
+    "options": "Optionen",
+    "add_option": "Option hinzufügen",
+    "select": "Wählen…",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "move_up": "Nach oben",
+    "move_down": "Nach unten",
+    "drag_to_reorder": "Zum Sortieren ziehen",
+    "preview_btn": "Formular-Vorschau",
+    "preview_title": "Vorschau",
+    "empty_preview": "Noch keine Felder. Füge welche aus dem Werkzeugkasten hinzu!",
+    "submit": "Absenden",
+    "close": "Schließen",
+    "clear": "Alles löschen"
   }
 }

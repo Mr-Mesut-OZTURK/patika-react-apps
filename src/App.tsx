@@ -12,6 +12,7 @@ import CryptoApp from "./apps/crypto/CryptoApp";
 import MemoryGame from "./apps/memory/MemoryGame";
 import BooksApp from "./apps/books/BooksApp";
 import RpsApp from "./apps/rps/RpsApp";
+import FormBuilderApp from "./apps/formbuilder/FormBuilderApp";
 import AppShell from "./components/AppShell";
 
 const App: React.FC = () => {
@@ -96,6 +97,14 @@ const App: React.FC = () => {
           element={
             <AppShell>
               <RpsApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/formbuilder"
+          element={
+            <AppShell>
+              <FormBuilderApp />
             </AppShell>
           }
         />

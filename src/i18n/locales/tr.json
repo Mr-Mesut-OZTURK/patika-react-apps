@@ -10,7 +10,8 @@
     "crypto": "Kripto Para",
     "memory": "Hafıza Oyunu",
     "books": "Kitap Arama",
-    "rps": "Taş Kağıt Makas"
+    "rps": "Taş Kağıt Makas",
+    "formbuilder": "Form Oluşturucu"
   },
   "home": {
     "title": "Patika React Apps",
@@ -29,7 +30,8 @@
     "crypto_desc": "CoinGecko API ile anlık kripto para fiyatları. İlk 100 coin'i listele, ada göre ara ve piyasa verilerini takip et.",
     "memory_desc": "4x3 matris üzerinde hafıza oyunu. Eşleşen kartları bul, en az hamlede bitir ve en iyi skorunu localStorage'a kaydet.",
     "books_desc": "Google Books API ile kitap ve yazar arama. Kapak görselleri, detay modalı ile sayfa sayısı, yayın tarihi ve daha fazlası.",
-    "rps_desc": "Bilgisayara karşı Taş Kağıt Makas! Turu kazan +1, kaybet -1. 3'e ulaşan kazanır, tur geçmişi listelenir."
+    "rps_desc": "Bilgisayara karşı Taş Kağıt Makas! Turu kazan +1, kaybet -1. 3'e ulaşan kazanır, tur geçmişi listelenir.",
+    "formbuilder_desc": "Sürükle-bırak ile form oluştur. Metin girişi, yazı alanı ve açılır liste ekle, etiketleri düzenle, zorunlu alan belirle ve formu önizle."
   },
   "weather": {
     "title": "🌤 Hava Durumu",
@@ -308,5 +310,39 @@
     "desc_scissors_paper": "✂️ Makas 📄 Kağıdı kesti!",
     "desc_paper_rock": "📄 Kağıt 🪨 Taşı sardı!",
     "desc_draw": "🤝 Berabere! Kimse puan almadı."
+  },
+  "fb": {
+    "title": "Form Oluşturucu",
+    "subtitle": "Sürükle • Bırak • Düzenle • Önizle",
+    "toolbox": "Araç Kutusu",
+    "toolbox_hint": "Bir bileşeni tuvale sürükle ya da eklemek için tıkla.",
+    "toolbox_tip": "Alanları tuval içinde sürükleyerek yeniden sıralayabilirsin.",
+    "tool_text": "Metin Girişi",
+    "tool_text_desc": "Tek satırlık metin alanı",
+    "tool_textarea": "Yazı Alanı",
+    "tool_textarea_desc": "Çok satırlık metin alanı",
+    "tool_dropdown": "Açılır Liste",
+    "tool_dropdown_desc": "Seçeneklerden birini seç",
+    "canvas_empty": "Tuval boş",
+    "canvas_hint": "Sol taraftaki araç kutusundan bir alan sürükle ya da üstüne tıkla.",
+    "drop_here": "Yeni alan eklemek için buraya bırak",
+    "fields": "alan",
+    "label": "Etiket",
+    "placeholder": "Yer Tutucu",
+    "required": "Zorunlu",
+    "options": "Seçenekler",
+    "add_option": "Seçenek ekle",
+    "select": "Seç…",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "move_up": "Yukarı taşı",
+    "move_down": "Aşağı taşı",
+    "drag_to_reorder": "Sürüklleyerek sırala",
+    "preview_btn": "Formu Önizle",
+    "preview_title": "Form Önizlemesi",
+    "empty_preview": "Henüz alan yok. Araç kutusundan ekle!",
+    "submit": "Gönder",
+    "close": "Kapat",
+    "clear": "Temizle"
   }
 }

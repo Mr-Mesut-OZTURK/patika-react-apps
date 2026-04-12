@@ -94,6 +94,14 @@ const apps: AppCard[] = [
     path: "/rps",
     gradient: "linear-gradient(135deg,#a29bfe,#6c5ce7)",
   },
+  {
+    emoji: "🧱",
+    titleKey: "nav.formbuilder",
+    descKey: "home.formbuilder_desc",
+    tags: ["Drag & Drop", "HTML5 API", "Form Preview"],
+    path: "/formbuilder",
+    gradient: "linear-gradient(135deg,#0ea5e9,#6366f1)",
+  },
 ];
 
 const Home: React.FC = () => {
@@ -118,7 +126,7 @@ const Home: React.FC = () => {
           <p className={styles.heroSub}>{t("home.subtitle")}</p>
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <strong>10</strong>
+              <strong>11</strong>
               <span>{t("home.stat_apps")}</span>
             </div>
             <div className={styles.statDivider} />

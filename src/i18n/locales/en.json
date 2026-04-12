@@ -10,7 +10,8 @@
     "crypto": "Crypto Tracker",
     "memory": "Memory Game",
     "books": "Book Search",
-    "rps": "Rock Paper Scissors"
+    "rps": "Rock Paper Scissors",
+    "formbuilder": "Form Builder"
   },
   "home": {
     "title": "Patika React Apps",
@@ -29,7 +30,8 @@
     "crypto_desc": "Live cryptocurrency prices via CoinGecko API. Browse the top 100 coins, search by name and track market data.",
     "memory_desc": "A 4x3 memory card game. Find all matching pairs in the fewest moves and save your best score to localStorage.",
     "books_desc": "Search books and authors using the Google Books API. Browse cover images and open a detail modal for page count, publish date and more.",
-    "rps_desc": "Play Rock Paper Scissors against the computer! Win a round +1, lose -1. First to ±3 wins. Round history is displayed."
+    "rps_desc": "Play Rock Paper Scissors against the computer! Win a round +1, lose -1. First to ±3 wins. Round history is displayed.",
+    "formbuilder_desc": "Build forms visually with drag-and-drop. Add text inputs, textareas and dropdowns, edit labels, mark fields required, then preview the live form."
   },
   "weather": {
     "title": "🌤 Weather",
@@ -308,5 +310,39 @@
     "desc_scissors_paper": "✂️ Scissors cuts 📄 Paper!",
     "desc_paper_rock": "📄 Paper wraps 🪨 Rock!",
     "desc_draw": "🤝 Draw! No points scored."
+  },
+  "fb": {
+    "title": "Form Builder",
+    "subtitle": "Drag • Drop • Customise • Preview",
+    "toolbox": "Toolbox",
+    "toolbox_hint": "Drag a component onto the canvas or click to add.",
+    "toolbox_tip": "You can reorder fields by dragging them inside the canvas.",
+    "tool_text": "Text Input",
+    "tool_text_desc": "Single-line text entry",
+    "tool_textarea": "Textarea",
+    "tool_textarea_desc": "Multi-line text area",
+    "tool_dropdown": "Dropdown",
+    "tool_dropdown_desc": "Select from options",
+    "canvas_empty": "Canvas is empty",
+    "canvas_hint": "Drag a field from the toolbox on the left, or click any item to add it.",
+    "drop_here": "Drop here to add a new field",
+    "fields": "fields",
+    "label": "Label",
+    "placeholder": "Placeholder",
+    "required": "Required",
+    "options": "Options",
+    "add_option": "Add option",
+    "select": "Select…",
+    "edit": "Edit",
+    "delete": "Delete",
+    "move_up": "Move up",
+    "move_down": "Move down",
+    "drag_to_reorder": "Drag to reorder",
+    "preview_btn": "Preview Form",
+    "preview_title": "Form Preview",
+    "empty_preview": "No fields yet. Add some from the toolbox!",
+    "submit": "Submit",
+    "close": "Close",
+    "clear": "Clear All"
   }
 }
