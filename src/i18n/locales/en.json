@@ -9,11 +9,16 @@
     "chat": "Live Chat",
     "crypto": "Crypto Tracker",
     "memory": "Memory Game",
-    "books": "Book Search"
+    "books": "Book Search",
+    "rps": "Rock Paper Scissors"
   },
   "home": {
     "title": "Patika React Apps",
     "subtitle": "Applications developed within the Patika.dev Front-End bootcamp",
+    "badge": "React 18 · TypeScript",
+    "projects": "Projects",
+    "stat_apps": "Apps",
+    "stat_tech": "Libraries",
     "open": "Open →",
     "weather_desc": "Real-time weather for 81 cities in Turkey. Temperature, humidity, feels-like and weather conditions.",
     "rickmorty_desc": "List all Rick and Morty characters using the GraphQL API, search by name and filter by status, gender, species and location.",
@@ -23,7 +28,8 @@
     "chat_desc": "Real-time chat application. Multiple users can message each other simultaneously. Instant multi-user communication via Socket.io.",
     "crypto_desc": "Live cryptocurrency prices via CoinGecko API. Browse the top 100 coins, search by name and track market data.",
     "memory_desc": "A 4x3 memory card game. Find all matching pairs in the fewest moves and save your best score to localStorage.",
-    "books_desc": "Search books and authors using the Google Books API. Browse cover images and open a detail modal for page count, publish date and more."
+    "books_desc": "Search books and authors using the Google Books API. Browse cover images and open a detail modal for page count, publish date and more.",
+    "rps_desc": "Play Rock Paper Scissors against the computer! Win a round +1, lose -1. First to ±3 wins. Round history is displayed."
   },
   "weather": {
     "title": "🌤 Weather",
@@ -281,5 +287,26 @@
     "detail_rating": "Rating",
     "detail_categories": "Categories",
     "preview_on_google": "Preview on Google Books"
+  },
+  "rps": {
+    "title": "Rock Paper Scissors",
+    "subtitle": "Play against the computer, first to 3 wins!",
+    "you": "You",
+    "computer": "Computer",
+    "rock": "Rock",
+    "paper": "Paper",
+    "scissors": "Scissors",
+    "round_win": "🎉 You Win the Round!",
+    "round_lose": "😔 You Lose the Round!",
+    "round_draw": "🤝 Draw!",
+    "you_win": "🏆 You Win!",
+    "computer_wins": "💥 Computer Wins!",
+    "play_again": "Play Again",
+    "history": "Round History",
+    "hint": "First to ±{{score}} wins",
+    "desc_rock_scissors": "🪨 Rock crushes ✂️ Scissors!",
+    "desc_scissors_paper": "✂️ Scissors cuts 📄 Paper!",
+    "desc_paper_rock": "📄 Paper wraps 🪨 Rock!",
+    "desc_draw": "🤝 Draw! No points scored."
   }
 }

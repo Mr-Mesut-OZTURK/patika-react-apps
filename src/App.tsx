@@ -11,6 +11,7 @@ import ChatApp from "./apps/chat/ChatApp";
 import CryptoApp from "./apps/crypto/CryptoApp";
 import MemoryGame from "./apps/memory/MemoryGame";
 import BooksApp from "./apps/books/BooksApp";
+import RpsApp from "./apps/rps/RpsApp";
 import AppShell from "./components/AppShell";
 
 const App: React.FC = () => {
@@ -87,6 +88,14 @@ const App: React.FC = () => {
           element={
             <AppShell>
               <BooksApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/rps"
+          element={
+            <AppShell>
+              <RpsApp />
             </AppShell>
           }
         />

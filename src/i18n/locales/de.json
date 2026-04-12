@@ -9,11 +9,16 @@
     "chat": "Live-Chat",
     "crypto": "Krypto-Tracker",
     "memory": "Memory-Spiel",
-    "books": "Bücher-Suche"
+    "books": "Bücher-Suche",
+    "rps": "Schere Stein Papier"
   },
   "home": {
     "title": "Patika React Apps",
     "subtitle": "Im Rahmen des Patika.dev Front-End Bootcamps entwickelte Anwendungen",
+    "badge": "React 18 · TypeScript",
+    "projects": "Projekte",
+    "stat_apps": "Apps",
+    "stat_tech": "Bibliotheken",
     "open": "Öffnen →",
     "weather_desc": "Aktuelles Wetter für 81 Städte in der Türkei. Temperatur, Luftfeuchtigkeit, gefühlte Temperatur und Wetterbedingungen.",
     "rickmorty_desc": "Liste alle Rick-and-Morty-Charaktere mit der GraphQL-API, suche nach Name und filtere nach Status, Geschlecht, Spezies und Standort.",
@@ -23,7 +28,8 @@
     "chat_desc": "Echtzeit-Chat-Anwendung. Mehrere Benutzer können gleichzeitig miteinander chatten. Sofortige Mehrbenutzer-Kommunikation über Socket.io.",
     "crypto_desc": "Live-Kryptowährungspreise über die CoinGecko-API. Durchsuche die Top 100 Coins, suche nach Name und verfolge Marktdaten.",
     "memory_desc": "Ein 4x3-Memory-Kartenspiel. Finde alle Paare in möglichst wenigen Zügen und speichere deinen besten Score im localStorage.",
-    "books_desc": "Bücher und Autoren mit der Google Books API suchen. Cover-Bilder anzeigen und im Detail-Modal Seitenzahl, Erscheinungsdatum und mehr abrufen."
+    "books_desc": "Bücher und Autoren mit der Google Books API suchen. Cover-Bilder anzeigen und im Detail-Modal Seitenzahl, Erscheinungsdatum und mehr abrufen.",
+    "rps_desc": "Spiele Schere Stein Papier gegen den Computer! Runde gewinnen +1, verlieren -1. Wer zuerst ±3 erreicht, gewinnt."
   },
   "weather": {
     "title": "🌤 Wetter",
@@ -281,5 +287,26 @@
     "detail_rating": "Bewertung",
     "detail_categories": "Kategorien",
     "preview_on_google": "Vorschau bei Google Books"
+  },
+  "rps": {
+    "title": "Schere Stein Papier",
+    "subtitle": "Spiele gegen den Computer, wer zuerst 3 Punkte hat, gewinnt!",
+    "you": "Du",
+    "computer": "Computer",
+    "rock": "Stein",
+    "paper": "Papier",
+    "scissors": "Schere",
+    "round_win": "🎉 Runde gewonnen!",
+    "round_lose": "😔 Runde verloren!",
+    "round_draw": "🤝 Unentschieden!",
+    "you_win": "🏆 Du gewinnst!",
+    "computer_wins": "💥 Computer gewinnt!",
+    "play_again": "Nochmal spielen",
+    "history": "Rundenverlauf",
+    "hint": "Wer zuerst ±{{score}} Punkte erreicht, gewinnt",
+    "desc_rock_scissors": "🪨 Stein schlägt ✂️ Schere!",
+    "desc_scissors_paper": "✂️ Schere schneidet 📄 Papier!",
+    "desc_paper_rock": "📄 Papier wickelt 🪨 Stein ein!",
+    "desc_draw": "🤝 Unentschieden! Keine Punkte."
   }
 }

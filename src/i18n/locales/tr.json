@@ -9,11 +9,16 @@
     "chat": "Canlı Sohbet",
     "crypto": "Kripto Para",
     "memory": "Hafıza Oyunu",
-    "books": "Kitap Arama"
+    "books": "Kitap Arama",
+    "rps": "Taş Kağıt Makas"
   },
   "home": {
     "title": "Patika React Apps",
     "subtitle": "Patika.dev Front-End bootcamp kapsamında geliştirilen uygulamalar",
+    "badge": "React 18 · TypeScript",
+    "projects": "Projeler",
+    "stat_apps": "Uygulama",
+    "stat_tech": "Kütüphane",
     "open": "Aç →",
     "weather_desc": "Türkiye'deki 81 şehir için anlık hava durumu. Sıcaklık, nem, hissedilen ısı ve hava koşulları.",
     "rickmorty_desc": "GraphQL API ile tüm Rick and Morty karakterlerini listele, ada göre ara, status / cinsiyet / tür / lokasyon bazlı filtrele.",
@@ -23,7 +28,8 @@
     "chat_desc": "Gerçek zamanlı sohbet uygulaması. Birden fazla kullanıcı aynı anda mesajlaşabilir. Socket.io ile anlık çok kullanıcılı iletişim.",
     "crypto_desc": "CoinGecko API ile anlık kripto para fiyatları. İlk 100 coin'i listele, ada göre ara ve piyasa verilerini takip et.",
     "memory_desc": "4x3 matris üzerinde hafıza oyunu. Eşleşen kartları bul, en az hamlede bitir ve en iyi skorunu localStorage'a kaydet.",
-    "books_desc": "Google Books API ile kitap ve yazar arama. Kapak görselleri, detay modalı ile sayfa sayısı, yayın tarihi ve daha fazlası."
+    "books_desc": "Google Books API ile kitap ve yazar arama. Kapak görselleri, detay modalı ile sayfa sayısı, yayın tarihi ve daha fazlası.",
+    "rps_desc": "Bilgisayara karşı Taş Kağıt Makas! Turu kazan +1, kaybet -1. 3'e ulaşan kazanır, tur geçmişi listelenir."
   },
   "weather": {
     "title": "🌤 Hava Durumu",
@@ -281,5 +287,26 @@
     "detail_rating": "Puan",
     "detail_categories": "Kategoriler",
     "preview_on_google": "Google Books'ta Önizle"
+  },
+  "rps": {
+    "title": "Taş Kağıt Makas",
+    "subtitle": "Bilgisayara karşı oyna, 3'e ulaşmak için kazan!",
+    "you": "Sen",
+    "computer": "Bilgisayar",
+    "rock": "Taş",
+    "paper": "Kağıt",
+    "scissors": "Makas",
+    "round_win": "🎉 Turu Kazandın!",
+    "round_lose": "😔 Turu Kaybettin!",
+    "round_draw": "🤝 Berabere!",
+    "you_win": "🏆 Kazanıyorsun!",
+    "computer_wins": "💥 Bilgisayar Kazandı!",
+    "play_again": "Tekrar Oyna",
+    "history": "Tur Geçmişi",
+    "hint": "±{{score}} puana ulaşan kazanır",
+    "desc_rock_scissors": "🪨 Taş ✂️ Makası kırdı!",
+    "desc_scissors_paper": "✂️ Makas 📄 Kağıdı kesti!",
+    "desc_paper_rock": "📄 Kağıt 🪨 Taşı sardı!",
+    "desc_draw": "🤝 Berabere! Kimse puan almadı."
   }
 }

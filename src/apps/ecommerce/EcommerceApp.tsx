@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Routes,
-  Route,
-  NavLink,
-  useNavigate,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ShopProvider, useShop } from "./contexts/ShopContext";
 import ProductCatalog from "./components/ProductCatalog";

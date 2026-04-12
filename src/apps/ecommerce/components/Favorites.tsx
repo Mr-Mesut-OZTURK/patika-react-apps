@@ -8,7 +8,7 @@ import styles from "./Favorites.module.css";
 const Favorites: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { favorites, toggleFavorite, addToCart } = useShop();
+  const { favorites, toggleFavorite } = useShop();
 
   if (favorites.length === 0) {
     return (
