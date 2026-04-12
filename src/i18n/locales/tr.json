@@ -8,7 +8,8 @@
     "notes": "Notlar",
     "chat": "Canlı Sohbet",
     "crypto": "Kripto Para",
-    "memory": "Hafıza Oyunu"
+    "memory": "Hafıza Oyunu",
+    "books": "Kitap Arama"
   },
   "home": {
     "title": "Patika React Apps",
@@ -21,7 +22,8 @@
     "notes_desc": "Notion tarzı not uygulaması. Not oluştur, düzenle, sil, sabitle ve tarayıcı kapatılsa bile notların korunmaya devam etsin.",
     "chat_desc": "Gerçek zamanlı sohbet uygulaması. Birden fazla kullanıcı aynı anda mesajlaşabilir. Socket.io ile anlık çok kullanıcılı iletişim.",
     "crypto_desc": "CoinGecko API ile anlık kripto para fiyatları. İlk 100 coin'i listele, ada göre ara ve piyasa verilerini takip et.",
-    "memory_desc": "4x3 matris üzerinde hafıza oyunu. Eşleşen kartları bul, en az hamlede bitir ve en iyi skorunu localStorage'a kaydet."
+    "memory_desc": "4x3 matris üzerinde hafıza oyunu. Eşleşen kartları bul, en az hamlede bitir ve en iyi skorunu localStorage'a kaydet.",
+    "books_desc": "Google Books API ile kitap ve yazar arama. Kapak görselleri, detay modalı ile sayfa sayısı, yayın tarihi ve daha fazlası."
   },
   "weather": {
     "title": "🌤 Hava Durumu",
@@ -257,5 +259,27 @@
     "game_over": "Tebrikler!",
     "finished_in": "{{moves}} hamlede tamamladınız.",
     "new_record": "Yeni rekor!"
+  },
+  "books": {
+    "app_title": "📚 Kitap Arama",
+    "subtitle": "Google Books API ile milyonlarca kitapı keşfet",
+    "search_placeholder": "Kitap adı veya yazar ara...",
+    "search_btn": "Ara",
+    "searching": "Aранıyor...",
+    "idle": "Aramaya başlamak için yukarıdaki alana kitap adı veya yazar yazın.",
+    "result_count": "\"{{query}}\" için {{total}} sonuçtan ilk {{count}} gösteriliyor",
+    "no_results": "\"{{query}}\" için sonuç bulunamadı.",
+    "error_fetch": "Veriler alınamadı. İnternet bağlantınızı kontrol edin.",
+    "detail": "Detay",
+    "close": "Kapat",
+    "unknown_author": "Bilinmeyen Yazar",
+    "detail_authors": "Yazarlar",
+    "detail_publisher": "Yayınevi",
+    "detail_published": "Yayın Tarihi",
+    "detail_pages": "Sayfa Sayısı",
+    "detail_language": "Dil",
+    "detail_rating": "Puan",
+    "detail_categories": "Kategoriler",
+    "preview_on_google": "Google Books'ta Önizle"
   }
 }

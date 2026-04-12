@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import styles from "./Home.module.css";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 
 interface AppCard {
   emoji: string;
@@ -77,6 +78,14 @@ const apps: AppCard[] = [
     path: "/memory",
     gradient: "linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%)",
   },
+  {
+    emoji: "📚",
+    titleKey: "nav.books",
+    descKey: "home.books_desc",
+    tags: ["Google Books API", "Axios", "Modal"],
+    path: "/books",
+    gradient: "linear-gradient(135deg, #e17055 0%, #d63031 100%)",
+  },
 ];
 
 const Home: React.FC = () => {
@@ -86,6 +95,9 @@ const Home: React.FC = () => {
   return (
     <div className={styles.page}>
       <header className={styles.hero}>
+        <div className={styles.heroTop}>
+          <LanguageSwitcher />
+        </div>
         <h1 className={styles.heroTitle}>{t("home.title")}</h1>
         <p className={styles.heroSub}>{t("home.subtitle")}</p>
       </header>

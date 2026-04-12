@@ -1,0 +1,152 @@
+.page {
+  min-height: 100vh;
+  background: #faf8f5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Header ─── */
+.header {
+  background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
+  padding: 0 24px;
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.titleIcon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+.subtitle {
+  margin: 2px 0 0;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 500;
+}
+
+/* ─── Main ─── */
+.main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 24px 52px;
+  box-sizing: border-box;
+}
+
+/* ─── Result meta ─── */
+.resultMeta {
+  margin: 0 0 18px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* ─── Grid ─── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+/* ─── Skeleton ─── */
+@keyframes shimmer {
+  0% {
+    background-position: -600px 0;
+  }
+  100% {
+    background-position: 600px 0;
+  }
+}
+
+.skeleton {
+  border-radius: 14px;
+  aspect-ratio: 2 / 3;
+  background: linear-gradient(90deg, #eee 25%, #f5f5f5 50%, #eee 75%);
+  background-size: 1200px 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+
+/* ─── Error ─── */
+.errorBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 24px;
+  font-size: 0.95rem;
+  color: #888;
+  text-align: center;
+}
+
+.errorBox span {
+  font-size: 2.2rem;
+}
+
+/* ─── Idle ─── */
+.idle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 80px 24px;
+  color: #bbb;
+  text-align: center;
+}
+
+.idleIcon {
+  font-size: 3.5rem;
+}
+
+.idle p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 600px) {
+  .headerInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main {
+    padding: 20px 14px 40px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

@@ -6,7 +6,13 @@
 
 .hero {
   text-align: center;
-  padding: 72px 24px 40px;
+  padding: 40px 24px 40px;
+}
+
+.heroTop {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 28px;
 }
 
 .heroTitle {

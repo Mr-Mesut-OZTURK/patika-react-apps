@@ -1,0 +1,109 @@
+.card {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 2 / 3;
+  background: #f0eeeb;
+  cursor: pointer;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.card:hover .cover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.45) 45%,
+    transparent 70%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px 12px 13px;
+}
+
+.hoverInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.32s ease,
+    opacity 0.28s ease;
+}
+
+.card:hover .hoverInfo {
+  max-height: 130px;
+  opacity: 1;
+}
+
+.authors {
+  margin: 0;
+  font-size: 0.77rem;
+  color: #ff9f89;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.year {
+  margin: 0;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.category {
+  margin: 0;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.65);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detailBtn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 0;
+  background: linear-gradient(135deg, #e17055 0%, #d63031 100%);
+  border: none;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.18s;
+}
+
+.detailBtn:hover {
+  opacity: 0.85;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 6px;
+}

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import WeatherApp from "./apps/weatherapp/WeatherApp";
@@ -11,70 +10,87 @@ import NotesApp from "./apps/notes/NotesApp";
 import ChatApp from "./apps/chat/ChatApp";
 import CryptoApp from "./apps/crypto/CryptoApp";
 import MemoryGame from "./apps/memory/MemoryGame";
-import LanguageSwitcher from "./components/LanguageSwitcher";
+import BooksApp from "./apps/books/BooksApp";
+import AppShell from "./components/AppShell";
 
 const App: React.FC = () => {
-  const { t } = useTranslation();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const close = () => setMenuOpen(false);
-
   return (
     <BrowserRouter>
-      <nav className="app-nav">
-        <button
-          className="app-nav-hamburger"
-          onClick={() => setMenuOpen((o) => !o)}
-          aria-label="Toggle menu"
-          aria-expanded={menuOpen}
-        >
-          {menuOpen ? "✕" : "☰"}
-        </button>
-        <div
-          className={`app-nav-links${menuOpen ? " app-nav-links--open" : ""}`}
-        >
-          <NavLink to="/" end className="app-nav-home" onClick={close}>
-            🏠 <span>{t("nav.home")}</span>
-          </NavLink>
-          <NavLink to="/weather" onClick={close}>
-            🌤 {t("nav.weather")}
-          </NavLink>
-          <NavLink to="/rickmorty" onClick={close}>
-            🧪 {t("nav.rickmorty")}
-          </NavLink>
-          <NavLink to="/bmi" onClick={close}>
-            📊 {t("nav.bmi")}
-          </NavLink>
-          <NavLink to="/shop" onClick={close}>
-            👗 {t("nav.shop")}
-          </NavLink>
-          <NavLink to="/notes" onClick={close}>
-            📒 {t("nav.notes")}
-          </NavLink>
-          <NavLink to="/chat" onClick={close}>
-            💬 {t("nav.chat")}
-          </NavLink>
-          <NavLink to="/crypto" onClick={close}>
-            🪙 {t("nav.crypto")}
-          </NavLink>
-          <NavLink to="/memory" onClick={close}>
-            🧠 {t("nav.memory")}
-          </NavLink>
-        </div>
-        <LanguageSwitcher />
-      </nav>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/weather" element={<WeatherApp />} />
-          <Route path="/rickmorty" element={<RickAndMortyApp />} />
-          <Route path="/bmi/*" element={<BMIApp />} />
-          <Route path="/shop/*" element={<EcommerceApp />} />
-          <Route path="/notes/*" element={<NotesApp />} />
-          <Route path="/chat/*" element={<ChatApp />} />
-          <Route path="/crypto" element={<CryptoApp />} />
-          <Route path="/memory" element={<MemoryGame />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/weather"
+          element={
+            <AppShell>
+              <WeatherApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/rickmorty"
+          element={
+            <AppShell>
+              <RickAndMortyApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/bmi/*"
+          element={
+            <AppShell>
+              <BMIApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/shop/*"
+          element={
+            <AppShell>
+              <EcommerceApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/notes/*"
+          element={
+            <AppShell>
+              <NotesApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/chat/*"
+          element={
+            <AppShell>
+              <ChatApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/crypto"
+          element={
+            <AppShell>
+              <CryptoApp />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/memory"
+          element={
+            <AppShell>
+              <MemoryGame />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/books"
+          element={
+            <AppShell>
+              <BooksApp />
+            </AppShell>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 };

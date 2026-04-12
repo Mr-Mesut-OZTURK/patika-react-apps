@@ -8,7 +8,8 @@
     "notes": "Notizen",
     "chat": "Live-Chat",
     "crypto": "Krypto-Tracker",
-    "memory": "Memory-Spiel"
+    "memory": "Memory-Spiel",
+    "books": "Bücher-Suche"
   },
   "home": {
     "title": "Patika React Apps",
@@ -21,7 +22,8 @@
     "notes_desc": "Eine Notion-ähnliche Notiz-App. Erstelle, bearbeite, lösche und hefte Notizen an — alles wird automatisch im Browser gespeichert.",
     "chat_desc": "Echtzeit-Chat-Anwendung. Mehrere Benutzer können gleichzeitig miteinander chatten. Sofortige Mehrbenutzer-Kommunikation über Socket.io.",
     "crypto_desc": "Live-Kryptowährungspreise über die CoinGecko-API. Durchsuche die Top 100 Coins, suche nach Name und verfolge Marktdaten.",
-    "memory_desc": "Ein 4x3-Memory-Kartenspiel. Finde alle Paare in möglichst wenigen Zügen und speichere deinen besten Score im localStorage."
+    "memory_desc": "Ein 4x3-Memory-Kartenspiel. Finde alle Paare in möglichst wenigen Zügen und speichere deinen besten Score im localStorage.",
+    "books_desc": "Bücher und Autoren mit der Google Books API suchen. Cover-Bilder anzeigen und im Detail-Modal Seitenzahl, Erscheinungsdatum und mehr abrufen."
   },
   "weather": {
     "title": "🌤 Wetter",
@@ -257,5 +259,27 @@
     "game_over": "Glückwunsch!",
     "finished_in": "In {{moves}} Zügen geschafft.",
     "new_record": "Neuer Rekord!"
+  },
+  "books": {
+    "app_title": "📚 Bücher-Suche",
+    "subtitle": "Millionen von Büchern über die Google Books API entdecken",
+    "search_placeholder": "Titel oder Autor suchen...",
+    "search_btn": "Suchen",
+    "searching": "Suche läuft...",
+    "idle": "Gib oben einen Buchtitel oder Autorennamen ein, um die Suche zu starten.",
+    "result_count": "{{count}} von {{total}} Ergebnissen für \"{{query}}\" werden angezeigt",
+    "no_results": "Keine Ergebnisse für \"{{query}}\" gefunden.",
+    "error_fetch": "Daten konnten nicht abgerufen werden. Bitte Internetverbindung prüfen.",
+    "detail": "Details",
+    "close": "Schließen",
+    "unknown_author": "Unbekannter Autor",
+    "detail_authors": "Autoren",
+    "detail_publisher": "Verlag",
+    "detail_published": "Veröffentlicht",
+    "detail_pages": "Seitenzahl",
+    "detail_language": "Sprache",
+    "detail_rating": "Bewertung",
+    "detail_categories": "Kategorien",
+    "preview_on_google": "Vorschau bei Google Books"
   }
 }
